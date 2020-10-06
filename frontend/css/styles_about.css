@@ -1,2 +1,16 @@
 @import url("footer.css");
 @import url("nav.css");
+
+:root {
+
+    --background: rgba(0, 214, 170, 0.85);
+}
+
+.gridContainer{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:20px;
+    margin: 0 auto;
+    justify-items: center;
+    align-items: center;
+}
