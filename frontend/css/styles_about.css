@@ -8,9 +8,28 @@
 
 .gridContainer{
     display:grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(5,1fr);
     grid-gap:20px;
-    margin: 0 auto;
+    margin: 20px;
+    
     justify-items: center;
     align-items: center;
 }
+
+.gridItem{
+    display:grid;
+    justify-items: center;
+    align-items: center;
+    margin:2px;
+}
+
+.title{
+    text-align: center;
+    padding: 50px;
+}
+
+.info{
+    text-align: center;
+}
+
+
