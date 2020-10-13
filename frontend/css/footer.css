@@ -12,6 +12,10 @@
     padding: 0;
 }
 
+.information a {
+    color: #fff;
+}
+
 body {
 
     line-height: 1.6;

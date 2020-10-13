@@ -17,4 +17,11 @@ grid-auto-rows: minmax(100,auto);
     
     padding: 1em;
     }
+
+div a {
+
+     text-decoration: none;
+     color: rgba(0, 214, 170, 0.85);
+    font-weight: 300;
     
+ }
