@@ -8,3 +8,5 @@ Web &amp; mobile project
 * Aymeric zal de contact pagina doen. 
 * Falko zal de header en de footer pagina doen zodat alle links werken en sociale media onderhouden. 
 * Berkan heeft de css voor de header en de footer gedaan en zal beginnen aan catalogus waar Aymeric hem dan in zal helpen.
+
+test
