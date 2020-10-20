@@ -1,0 +1,42 @@
+*, *::before, *::after {
+
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+main {
+    font-family: 'Patua One', cursive;
+}
+
+body {
+	background: url('../img/landing_picture.jpeg');
+	background-size: cover;
+}
+
+p {
+	font-family: 'Patua One', cursive;
+	
+}
+
+h1 {
+	font-family: 'Patua One', cursive;
+	
+}
+
+h2 {
+
+	font-family: 'Patua One', cursive;
+
+}
+
+h3 {
+
+	font-family: 'Patua One', cursive;
+
+}
+
+a {
+	font-family: 'Patua One', cursive;
+	
+}

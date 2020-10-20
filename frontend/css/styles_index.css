@@ -1,4 +1,74 @@
-@import url("footer.css");
-@import url("nav.css");
+@import url(main.css);
+@import url(nav-test.css);
+
+/* Index sliding animation CSS */
+.landing {
+
+    min-height: 100vh;
+    background: url('../img/Landing_resized.jpeg');
+    background-size: cover;
+    padding: 0rem 5rem;
+}
+
+h2 	{
+
+	color: #fff;
+
+}
+
+.Logo-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size: 5rem;
+    font-family:'Patua One', cursive;
+    
+}
+
+.intro {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(6,32,55);
+}
+
+.intro-text {
+    color: #fff;
+    font-family:'Patua One', cursive;
+    font-size: 3rem;
+    z-index: 1;
+
+    
+}
+
+.hide {
+    background: rgb(6,32,55) ;
+    overflow: hidden;
+}
+
+.hide span {
+
+    display: inline-block;
+    transform: translateY(100%);
+}
+
+.slider {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(12, 67, 121);
+    transform: translateY(100%);
+}
+
+
+
 
 
