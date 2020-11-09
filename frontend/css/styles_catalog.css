@@ -13,6 +13,10 @@ grid-auto-rows: minmax(100,auto);
 
 
 }
+main {
+    text-align: center;
+}
+}
 
 .catalog {
 display: grid ;
