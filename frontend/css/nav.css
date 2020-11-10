@@ -1,208 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;1,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 
 :root {
-	--background: rgba(0, 214, 170, .85);
+
+	--color-navlinks: #fff;
 }
-
-*, *::before, *::after {
-
-	box-sizing: border-box;
-}
-
-
-body {
-	margin: 0;
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 400;
-	
-	
-}
-
-main {
-	
-	
-	background-blend-mode: multiply;
-	background-size:cover;
-	display: grid;
-}
-
-
-/* Navigation styles start here*/
-
-header {
-
-	background: var(--background);
-	text-align: center;
-	position: fixed;
-	z-index: 1;
-	width: 100%;
-
-}
-
-
-
-/*Begin nav toggle for mobile*/
-
-.nav-toggle {
-	display: none;
-
-}
-
-.nav-toggle-label {
-	
-	position: absolute;
-	top: 0;
-	left: 0;
-	margin-left: 1em;
-	height: 100%;
-	display: flex;
-	align-items: center;
-}
-
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-
-	display: block;
-	background: white;
-	height: 2px;
-	width: 2em;
-	position: relative;
-}
-
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-
-	content: '';
-	position: absolute;
-}
-
-.nav-toggle-label span::before {
-
-	bottom: 6px;
-}
-
-.nav-toggle-label span::after {
-
-	top: 6px;
-}
-
-/* end nav-toggle for mobile */
 
 nav {
-	position: absolute;
-	text-align: left;
-	top: 100%;
-	left: 0;
-	background: var(--background);
-	width: 100%;
-	transform: scale(1, 0);
-	transform-origin: top;
-	transition: transform 400ms ease-in-out;
-	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 10vh;
+	padding: 0 5rem;
 
 }
 
 nav ul {
-	margin: 0;
-	padding: 0;
+	display: flex;
 	list-style: none;
+
 }
 
 nav li {
-	margin-bottom: 1em;
-	margin-left: 1em;
+	padding-left: 5rem;
+	font-size: 1.2rem;
+	font-weight: 400;
 }
 
 nav a {
-	color: black;
+
 	text-decoration: none;
-	font-size: 1.2rem;
-	text-transform: uppercase;
-	opacity: 0;
-	transition: opacity 150ms ease-in-out;
+	color: var(--color-navlinks);
+	font-family: 'Patua One', cursive;
 }
 
 nav a:hover {
-	color: #ed2b66;
+	opacity: 0.85;
 }
 
-/* Mobile view toggle */
-
-.nav-toggle:checked ~ nav {
-
-	transform: scale(1,1)
-
-}
-
-.nav-toggle:checked ~ nav a {
-
-	opacity: 1;
-	transition: opacity 250ms ease-in-out 250ms;
-
-}
-
-
-
-/* Big screens */
-
-@media screen and (min-width: 1100px) {
-	.nav-toggle-label {
-		display: none;
-	}
-
-	header {
-		display: grid;
-		grid-template-columns: fr auto minmax(600px, 3fr) 1.5fr;
-
-	}
-
-	.logo {
-		grid-column: 1 / 2 ;
-	}
-
-	nav {
-
-		all: unset;
-		grid-column: 3 / 4;
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
-	}
-
-	nav ul {
-		display: flex;
-		padding-right: 10px;
-	}
-
-	nav li {
-		margin-left: 3em;
-		margin-bottom: 0;
-	}
-
-	nav a {
-		opacity: 1;
-		position: relative;
-	}
-
-	/* Hover effect (Pseudo) */
-
-	nav a::before {
-		content: '';
-		display: block;
-		height: 1px;
-		background: #ed2b66;
-		position: absolute;
-		bottom: -.75em;
-		left: 0;
-		right: 0;
-		transform: scale(0,1);
-		transition: transform ease-in-out 250ms;
-	}
-
-	nav a:hover::before {
-		transform: scale(1,1);
-	}
-
-
-}
