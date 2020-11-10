@@ -1,270 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;1,300&display=swap");
 
 :root {
-
-    --background: rgba(0, 214, 170, 0.85);
+    --background-footer: rgb(4,40,66);
+    --color-footerlinks: rgb(74, 162, 210);
 }
-
-*, *::before, *::after {
-
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-.information a {
-    color: #fff;
-}
-
-body {
-
-    line-height: 1.6;
-    background-color: #333;
-    color: #fff;
-
-}
-
-footer h1 {
-
-    font-size: 1.5em;
-    margin-bottom: 1em;
-    font-weight: 400;
-    color: #ed2b66;
-
-}
-
- footer h2 {
-
-    font-size: 1em;
-    margin-bottom: 1em;
-    font-weight: 400;
-    color: #ed2b66;
-}
-
-footer h3 {
-
-    font-size: 17px;
-    margin-bottom: 1em;
-    font-weight: 500;
-    color: #ed2b66;
-}
-
-footer a {
-
-    text-decoration: none;
-    color: #fff;
-    font-weight: 300;
-    font-size: 14px;
-}
-
-footer ul {
-
-    list-style: none;
-
-}
-
-footer li {
-
-    padding-bottom: 3px;
-
-}
-
-footer li a:hover {
-
-        border-bottom: 1px solid #ed2b66;
-        transition: .3s;
-
-}
-
-.logo-footer {
-
-    width: 100%
-}
-
-
-
-/* footer style */
 
 footer {
-    width: 100%;
-    margin: 0 auto;
-    padding: 80px 20px 30px 20px;
-    background: var(--background);
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 80px;
-    border-bottom: 2px solid #fff;
-    border-top: 2px solid #fff;
-    
-
-}
-
-.logo-footer {
-    max-width: 170px;
-    margin-bottom: 30px;
-}
-
-.logo-contact p {
-
-    font-size: 14px;
-    font-weight: 100;
-    line-height: 1.7;
-}
-
-.logo-contact h3 {
-
-    margin-top: 30px;
-}
-
-.logo-contact i {
-    
-    margin-top: 10px;
-}
-
-
-/* Subscribe style */
-
-.input-container {
-
-    display: flex;
-    width: 100%;
-    margin-bottom: 15px;
-}
-
-.input-container i {
-
-    background-color: #fff;
-    color: #ed2b66;
-    padding: 5px 10px;
-    border-bottom-left-radius: 10px;
-}
-
-.input-container input {
-
-    border: none;
-}
-
-.btn {
-    display: inline-block;
-    cursor: pointer;
-    margin-top: 10px;
-    padding: 3px 20px;
-    border: none;
-    background-color: #ed2b66;
-    border-bottom-left-radius: 10px;
-    color: #fff;
-    font-family: "Work Sans", sans-serif;
-}
-
-.btn:hover {
-    opacity: 0.85;
-}
-
-/* Footer bottom style */
-
-.footer-bottom {
-
-    width: 100%;
-    margin: 0 auto;
+    min-height: 5vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 5px;
-}
-
-.copyright {
-    font-size: 12px;
-    font-weight: 100px;
-    letter-spacing: 1px;
+    background-color: var(--background-footer);
+    padding: 0 5rem;
 }
 
 .social-icons {
-
-    display: block;
-
+    
+    margin-left: 1rem;
 }
 
-.social-icons i {
+.copyright p {
 
-    font-size: 18px;
-    color: #fff;
-    padding: 0 15px 0 0;
+    color: var(--color-footerlinks);
+    font-family: 'Patua One', cursive;
+    font-size: 1.2rem;
 }
 
-.social-icons i:hover {
+.social-icons a {
 
-    color: #ed2b66;
-    transition: 0.3s;
+    padding-right: 1rem;
+    font-size: 1.2rem;
+    color: var(--color-footerlinks);
+    text-decoration: none;
 }
 
-.logo-contact i {
-
-    margin-right: 10px;
-}
-
-
-/* smaller screens */
-
-@media (max-width: 880px) {
-
-    .footer {
-        width: 100%;
-        align-items: center;
-        text-align: center;
-        grid-template-columns: repeat(2,1fr);
-        margin: 0 auto;
-    }
-
-    .logo-contact {
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .information {
-
-        margin-top: 50px;
-
-    }
-
-    .input-container {
-        
-        display: flex;
-        justify-content: center;
-    }
-}
-
-@media (max-width: 500  px) {
-
-    .footer {
-        padding-top: 20px;
-        width: 100%;
-        grid-template-columns: repeat(1,1fr);
-    }
-
-    .information {
-        margin: -30px 0;
-    }
-
-    .subscribe-form {
-        padding-bottom: -30px;
-
-    }
-
-    .footer-bottom {
-        display: block;
-        text-align: center;
-
-    }
-
-    .social-icons {
-
-        margin: 10px 0;
-
-    }
-
-    .copyright {
-        margin: 20px 0;
-    }
+.social-icons a:hover {
+    opacity: 0.85;
+    color: #e6e6e6;
 }

@@ -1,2 +1,76 @@
-@import url("footer.css");
-@import url("nav.css");
+@import url(footer.css);
+@import url(nav-test.css);
+@import url(main.css);
+
+
+nav {
+    min-height: 8vh;
+}
+
+
+.contact-wrapper {
+    background-color: #dfdfdf;
+    padding: 2rem 5rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    padding: 0 5rem;
+    background-color: white;
+    
+}
+
+label {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+input {
+    border-radius: 8px;
+    
+    text-align: center;
+}
+
+
+
+.button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 6rem;
+    text-decoration: none;
+    border: 1px solid rgb(6,32,55);
+    text-align: center;
+    padding: 1rem 1rem;
+    color: rgb(6,32,55);
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.button:hover {
+    opacity: 0.85;
+    background-color: rgb(6,32,55);
+    filter: saturate(2);
+    color: #e6e6e6;
+    
+}
+
+
+
+
+
+
+
+
+
+
