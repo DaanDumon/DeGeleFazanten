@@ -9,7 +9,7 @@ nav {
 
 
 .contact-wrapper {
-    background-color: #dfdfdf;
+    background-image: radial-gradient(circle farthest-side at center, rgba(20, 175, 242, 1) 10%, rgba(44, 182, 242, 1) 20%, rgba(68, 190, 242, 1) 30%, rgba(93, 197, 242, 1) 40%, rgba(117, 204, 242, 1) 50%, rgba(141, 212, 242, 1) 60%, rgba(165, 219, 242, 1) 70%, rgba(189, 226, 242, 1) 80%, rgba(214, 233, 242, 1) 90%, rgba(238, 241, 242, 1) 100%);
     padding: 2rem 5rem;
     min-height: 100vh;
     display: flex;
@@ -21,12 +21,13 @@ form {
     display: flex;
     flex-direction: column;
     border: 1px solid black;
-    width: 100%;
+    width: 60%;
+    height: 100%;
     justify-content: center;
     align-items: center;
-    height: 40vh;
     padding: 0 5rem;
     background-color: white;
+    border-radius: 20px;
     
 }
 
@@ -37,7 +38,7 @@ label {
 
 input {
     border-radius: 8px;
-    
+    padding: 10px 10px;
     text-align: center;
 }
 
@@ -46,7 +47,6 @@ input {
 .button {
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 6rem;
     text-decoration: none;
     border: 1px solid rgb(6,32,55);
     text-align: center;
@@ -55,13 +55,14 @@ input {
     border-radius: 30px;
     cursor: pointer;
     font-size: 24px;
+    background-color: white;
 }
 
 .button:hover {
     opacity: 0.85;
     background-color: rgb(6,32,55);
     filter: saturate(2);
-    color: #e6e6e6;
+    color: white;
     
 }
 
